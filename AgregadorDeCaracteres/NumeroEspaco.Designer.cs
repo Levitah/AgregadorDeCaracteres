@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NumeroEspaco));
             this.fBtnCancelar = new System.Windows.Forms.Button();
             this.fBtnConfirmar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -82,6 +83,7 @@
             this.Controls.Add(this.fBtnCancelar);
             this.Controls.Add(this.fBtnConfirmar);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NumeroEspaco";
             this.Text = "Agregador de Caracteres - Número";
             ((System.ComponentModel.ISupportInitialize)(this.fTxtNumero)).EndInit();

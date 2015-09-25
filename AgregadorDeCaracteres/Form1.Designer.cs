@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.fTxtTexto = new System.Windows.Forms.TextBox();
             this.fBtnIncluirAntes = new System.Windows.Forms.Button();
             this.fBtnIncluirEmEspaco = new System.Windows.Forms.Button();
@@ -41,6 +42,7 @@
             this.fTxtTexto.MaxLength = 999999999;
             this.fTxtTexto.Multiline = true;
             this.fTxtTexto.Name = "fTxtTexto";
+            this.fTxtTexto.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.fTxtTexto.Size = new System.Drawing.Size(483, 320);
             this.fTxtTexto.TabIndex = 0;
             // 
@@ -84,6 +86,7 @@
             this.Controls.Add(this.fBtnIncluirEmEspaco);
             this.Controls.Add(this.fBtnIncluirAntes);
             this.Controls.Add(this.fTxtTexto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Agregador de Caracteres";
             this.ResumeLayout(false);

@@ -117,4 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA
+        AACHC0v/hwtL/0LG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tIcL
+        S/+HC0v/hwtL/4cLS/+HC0v/Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tIcL
+        S/+HC0v/hwtL/0LG/7SHC0v/hwtL/4cLS/9Cxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tIcL
+        S/+HC0v/hwtL/0LG/7RCxv+0Qsb/tIcLS/+HC0v/hwtL/0LG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tIcL
+        S/+HC0v/hwtL/0LG/7RCxv+0Qsb/tELG/7SHC0v/hwtL/4cLS/+HC0v/hwtL/4cLS/+HC0v/hwtL/4cL
+        S/+HC0v/hwtL/4cLS/9Cxv+0Qsb/tELG/7RCxv+0Qsb/tIcLS/+HC0v/hwtL/4cLS/+HC0v/hwtL/4cL
+        S/+HC0v/hwtL/4cLS/9Cxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7SHC0v/hwtL/4cLS/9Cxv+0Qsb/tELG
+        /7RCxv+0hwtL/4cLS/+HC0v/Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tIcLS/+HC0v/Qsb/tELG
+        /7RCxv+0Qsb/tIcLS/+HC0v/Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0hwtL/4cL
+        S/9Cxv+0Qsb/tIcLS/+HC0v/Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tIcL
+        S/+HC0v/Qsb/tELG/7SHC0v/hwtL/0LG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG
+        /7SHC0v/hwtL/4cLS/+HC0v/hwtL/4cLS/9Cxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG
+        /7RCxv+0Qsb/tIcLS/+HC0v/hwtL/4cLS/9Cxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG
+        /7RCxv+0Qsb/tELG/7SHC0v/hwtL/4cLS/+HC0v/Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG
+        /7RCxv+0Qsb/tELG/7RCxv+0Qsb/tIcLS/+HC0v/Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG
+        /7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG
+        /7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG/7RCxv+0Qsb/tELG
+        /7RCxv+0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAA==
+</value>
+  </data>
 </root>
