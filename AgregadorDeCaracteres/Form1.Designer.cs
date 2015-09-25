@@ -28,62 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.fTxtTexto = new System.Windows.Forms.TextBox();
+            this.fBtnIncluirAntes = new System.Windows.Forms.Button();
+            this.fBtnIncluirEmEspaco = new System.Windows.Forms.Button();
+            this.fBtnIncluirDepois = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // fTxtTexto
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.MaxLength = 999999999;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1218, 543);
-            this.textBox1.TabIndex = 0;
+            this.fTxtTexto.BackColor = System.Drawing.Color.Azure;
+            this.fTxtTexto.Location = new System.Drawing.Point(12, 12);
+            this.fTxtTexto.MaxLength = 999999999;
+            this.fTxtTexto.Multiline = true;
+            this.fTxtTexto.Name = "fTxtTexto";
+            this.fTxtTexto.Size = new System.Drawing.Size(483, 320);
+            this.fTxtTexto.TabIndex = 0;
             // 
-            // button1
+            // fBtnIncluirAntes
             // 
-            this.button1.Location = new System.Drawing.Point(13, 561);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Incluir Antes";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.fBtnIncluirAntes.Location = new System.Drawing.Point(12, 338);
+            this.fBtnIncluirAntes.Name = "fBtnIncluirAntes";
+            this.fBtnIncluirAntes.Size = new System.Drawing.Size(75, 23);
+            this.fBtnIncluirAntes.TabIndex = 1;
+            this.fBtnIncluirAntes.Text = "Incluir Antes";
+            this.fBtnIncluirAntes.UseVisualStyleBackColor = true;
+            this.fBtnIncluirAntes.Click += new System.EventHandler(this.fBtnIncluirAntes_Click);
             // 
-            // button2
+            // fBtnIncluirEmEspaco
             // 
-            this.button2.Location = new System.Drawing.Point(173, 561);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Incluir em Espaço";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.fBtnIncluirEmEspaco.Location = new System.Drawing.Point(202, 338);
+            this.fBtnIncluirEmEspaco.Name = "fBtnIncluirEmEspaco";
+            this.fBtnIncluirEmEspaco.Size = new System.Drawing.Size(104, 23);
+            this.fBtnIncluirEmEspaco.TabIndex = 2;
+            this.fBtnIncluirEmEspaco.Text = "Incluir em Espaço";
+            this.fBtnIncluirEmEspaco.UseVisualStyleBackColor = true;
+            this.fBtnIncluirEmEspaco.Click += new System.EventHandler(this.fBtnIncluirEmEspaco_Click);
             // 
-            // button3
+            // fBtnIncluirDepois
             // 
-            this.button3.Location = new System.Drawing.Point(356, 561);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Incluir Após";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.fBtnIncluirDepois.Location = new System.Drawing.Point(412, 338);
+            this.fBtnIncluirDepois.Name = "fBtnIncluirDepois";
+            this.fBtnIncluirDepois.Size = new System.Drawing.Size(83, 23);
+            this.fBtnIncluirDepois.TabIndex = 3;
+            this.fBtnIncluirDepois.Text = "Incluir Depois";
+            this.fBtnIncluirDepois.UseVisualStyleBackColor = true;
+            this.fBtnIncluirDepois.Click += new System.EventHandler(this.fBtnIncluirDepois_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1242, 596);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.BackColor = System.Drawing.Color.Bisque;
+            this.ClientSize = new System.Drawing.Size(507, 395);
+            this.Controls.Add(this.fBtnIncluirDepois);
+            this.Controls.Add(this.fBtnIncluirEmEspaco);
+            this.Controls.Add(this.fBtnIncluirAntes);
+            this.Controls.Add(this.fTxtTexto);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Agregador de Caracteres";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -91,10 +93,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox fTxtTexto;
+        private System.Windows.Forms.Button fBtnIncluirAntes;
+        private System.Windows.Forms.Button fBtnIncluirEmEspaco;
+        private System.Windows.Forms.Button fBtnIncluirDepois;
     }
 }
 

@@ -11,79 +11,76 @@ namespace AgregadorDeCaracteres
 {
     public partial class Form1 : Form
     {
-        public string[] SEPARADOR { get; set; }
-        public string[] SEPARADOR_PALAVRA { get; set; }
-
         public Form1()
         {
             InitializeComponent();
-            SEPARADOR = new string[1];
-            SEPARADOR[0] = Environment.NewLine;
-
-            SEPARADOR_PALAVRA = new string[2];
-            SEPARADOR_PALAVRA[0] = "\t";
-            SEPARADOR_PALAVRA[1] = " ";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void fBtnIncluirAntes_Click(object sender, EventArgs e)
         {
-            string texto = textBox1.Text;
-            string textoFinal = string.Empty;
-
-            string textoSolicitado = StringIncluir.ObterString();
-
-            foreach (string linha in texto.Split(SEPARADOR, StringSplitOptions.None))
-                textoFinal = string.Format("{0}{1}{2}{3}", textoFinal, Environment.NewLine, textoSolicitado, linha);
-
-            textBox1.Text = textoFinal;
+            IncluirTexto(IncluirEm.Antes);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void fBtnIncluirDepois_Click(object sender, EventArgs e)
         {
-            string texto = textBox1.Text;
-            string textoFinal = string.Empty;
-
-            string textoSolicitado = StringIncluir.ObterString();
-
-            foreach (string linha in texto.Split(SEPARADOR, StringSplitOptions.None))
-                textoFinal = string.Format("{0}{1}{2}{3}", textoFinal, Environment.NewLine, linha, textoSolicitado);
-
-            textBox1.Text = textoFinal;
+            IncluirTexto(IncluirEm.Depois);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void IncluirTexto(IncluirEm incluirEm)
         {
-            KeyValuePair<int, string> retorno = StringIncluirEspaco.ObterString();
-            int emEspaco = retorno.Key;
-            int contadorEspacos = 0;
-            string texto = textBox1.Text;
-            string textoFinal = string.Empty;
-            string textoSolicitado = retorno.Value;
-            string novaLinha = string.Empty;
+            IncluirTexto(incluirEm, 0);
+        }
 
-            foreach (string linha in texto.Split(SEPARADOR, StringSplitOptions.None))
-            {
-                foreach (string palavra in linha.Split(SEPARADOR_PALAVRA, StringSplitOptions.None))
-                {
-                    if (contadorEspacos == emEspaco)
-                        novaLinha += textoSolicitado + palavra;
-                    else
-                    {
-                        if (contadorEspacos == 0)
-                            novaLinha += palavra;
-                        else
-                            novaLinha += " " + palavra;
-                    }
+        private void IncluirTexto(IncluirEm incluirEm, int espaco)
+        {
+            string textoIncluir = TextoIncluir.ObterTexto();
+            if (string.IsNullOrEmpty(textoIncluir))
+                return;
 
-                    contadorEspacos = contadorEspacos + 1;
-                }
+            List<string> palavras = new List<string>();
+            foreach (string palavra in fTxtTexto.Text.Split(new string[1] { Environment.NewLine }, StringSplitOptions.None))
+                if (incluirEm == IncluirEm.Antes)
+                    palavras.Add(textoIncluir + palavra);
+                else if (incluirEm == IncluirEm.Depois)
+                    palavras.Add(palavra + textoIncluir);
+                else if (incluirEm == IncluirEm.Espaco)
+                    palavras.Add(IncluirEmEspaco(palavra, textoIncluir, espaco));
+            fTxtTexto.Text = string.Join(Environment.NewLine, palavras.ToArray());
+        }
 
-                textoFinal = string.Format("{0}{1}{2}", textoFinal, Environment.NewLine, novaLinha);
-                novaLinha = string.Empty;
-                contadorEspacos = 0;
+        private string IncluirEmEspaco(string linha, string palavraIncluir, int espaco)
+        {
+            string[] palavras = linha.Split(' ');
+            string palavraMontada = string.Empty;
+            int contador = 0;
+
+            foreach (string palavra in palavras) {
+                if (contador == 0)
+                    palavraMontada += palavra;
+                else if (contador == espaco)
+                    palavraMontada += palavraIncluir + palavra;
+                else
+                    palavraMontada += " " + palavra;
+                contador++;
             }
 
-            textBox1.Text = textoFinal;
+            return palavraMontada;
         }
+
+        private void fBtnIncluirEmEspaco_Click(object sender, EventArgs e)
+        {
+            int espaco = NumeroEspaco.ObterNumero();
+            if (espaco < 1)
+                return;
+
+            IncluirTexto(IncluirEm.Espaco, espaco);
+        }
+    }
+
+    public enum IncluirEm
+    {
+        Antes = 1,
+        Depois,
+        Espaco
     }
 }
