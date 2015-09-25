@@ -1,0 +1,10 @@
+c:\users\lucassant'anna\documents\visual studio 2012\Projects\AgregadorDeCaracteres\AgregadorDeCaracteres\bin\Debug\AgregadorDeCaracteres.exe
+c:\users\lucassant'anna\documents\visual studio 2012\Projects\AgregadorDeCaracteres\AgregadorDeCaracteres\bin\Debug\AgregadorDeCaracteres.pdb
+c:\users\lucassant'anna\documents\visual studio 2012\Projects\AgregadorDeCaracteres\AgregadorDeCaracteres\obj\Debug\AgregadorDeCaracteres.csprojResolveAssemblyReference.cache
+c:\users\lucassant'anna\documents\visual studio 2012\Projects\AgregadorDeCaracteres\AgregadorDeCaracteres\obj\Debug\AgregadorDeCaracteres.Form1.resources
+c:\users\lucassant'anna\documents\visual studio 2012\Projects\AgregadorDeCaracteres\AgregadorDeCaracteres\obj\Debug\AgregadorDeCaracteres.Properties.Resources.resources
+c:\users\lucassant'anna\documents\visual studio 2012\Projects\AgregadorDeCaracteres\AgregadorDeCaracteres\obj\Debug\AgregadorDeCaracteres.StringIncluir.resources
+c:\users\lucassant'anna\documents\visual studio 2012\Projects\AgregadorDeCaracteres\AgregadorDeCaracteres\obj\Debug\AgregadorDeCaracteres.csproj.GenerateResource.Cache
+c:\users\lucassant'anna\documents\visual studio 2012\Projects\AgregadorDeCaracteres\AgregadorDeCaracteres\obj\Debug\AgregadorDeCaracteres.exe
+c:\users\lucassant'anna\documents\visual studio 2012\Projects\AgregadorDeCaracteres\AgregadorDeCaracteres\obj\Debug\AgregadorDeCaracteres.pdb
+c:\users\lucassant'anna\documents\visual studio 2012\Projects\AgregadorDeCaracteres\AgregadorDeCaracteres\obj\Debug\AgregadorDeCaracteres.StringIncluirEspaco.resources
