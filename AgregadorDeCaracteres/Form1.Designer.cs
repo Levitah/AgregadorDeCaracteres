@@ -33,6 +33,7 @@
             this.fBtnIncluirAntes = new System.Windows.Forms.Button();
             this.fBtnIncluirEmEspaco = new System.Windows.Forms.Button();
             this.fBtnIncluirDepois = new System.Windows.Forms.Button();
+            this.fBtnTrim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // fTxtTexto
@@ -45,6 +46,7 @@
             this.fTxtTexto.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.fTxtTexto.Size = new System.Drawing.Size(483, 320);
             this.fTxtTexto.TabIndex = 0;
+            this.fTxtTexto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fTxtTexto_KeyDown);
             // 
             // fBtnIncluirAntes
             // 
@@ -76,12 +78,23 @@
             this.fBtnIncluirDepois.UseVisualStyleBackColor = true;
             this.fBtnIncluirDepois.Click += new System.EventHandler(this.fBtnIncluirDepois_Click);
             // 
+            // fBtnTrim
+            // 
+            this.fBtnTrim.Location = new System.Drawing.Point(202, 367);
+            this.fBtnTrim.Name = "fBtnTrim";
+            this.fBtnTrim.Size = new System.Drawing.Size(104, 23);
+            this.fBtnTrim.TabIndex = 4;
+            this.fBtnTrim.Text = "Trim";
+            this.fBtnTrim.UseVisualStyleBackColor = true;
+            this.fBtnTrim.Click += new System.EventHandler(this.fBtnTrim_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(507, 395);
+            this.Controls.Add(this.fBtnTrim);
             this.Controls.Add(this.fBtnIncluirDepois);
             this.Controls.Add(this.fBtnIncluirEmEspaco);
             this.Controls.Add(this.fBtnIncluirAntes);
@@ -100,6 +113,7 @@
         private System.Windows.Forms.Button fBtnIncluirAntes;
         private System.Windows.Forms.Button fBtnIncluirEmEspaco;
         private System.Windows.Forms.Button fBtnIncluirDepois;
+        private System.Windows.Forms.Button fBtnTrim;
     }
 }
 

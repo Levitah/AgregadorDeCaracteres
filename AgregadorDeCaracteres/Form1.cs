@@ -75,6 +75,38 @@ namespace AgregadorDeCaracteres
 
             IncluirTexto(IncluirEm.Espaco, espaco);
         }
+
+        private void fTxtTexto_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.A)
+            {
+                fTxtTexto.SelectAll();
+            }
+            else if (e.Control && e.KeyCode == Keys.Back)
+            {
+                SendKeys.SendWait("^+{LEFT}{BACKSPACE}");
+            }
+        }
+
+        private void fBtnTrim_Click(object sender, EventArgs e)
+        {
+            KeyValuePair<bool?, bool?> trimEsquerdaDireita = Trim.ObterInformacoesTrim();
+            if (trimEsquerdaDireita.Key.HasValue && trimEsquerdaDireita.Value.HasValue)
+            {
+                string palavraAlterada = string.Empty;
+                List<string> palavras = new List<string>();
+                foreach (string palavra in fTxtTexto.Text.Split(new string[1] { Environment.NewLine }, StringSplitOptions.None))
+                {
+                    palavraAlterada = palavra;
+                    if (trimEsquerdaDireita.Key.Value)
+                        palavraAlterada = palavraAlterada.TrimStart();
+                    if (trimEsquerdaDireita.Value.Value)
+                        palavraAlterada = palavraAlterada.TrimEnd();
+                    palavras.Add(palavraAlterada);
+                }
+                fTxtTexto.Text = string.Join(Environment.NewLine, palavras.ToArray());
+            }
+        }
     }
 
     public enum IncluirEm

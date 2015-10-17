@@ -64,6 +64,12 @@
     <Compile Include="TextoIncluir.Designer.cs">
       <DependentUpon>TextoIncluir.cs</DependentUpon>
     </Compile>
+    <Compile Include="Trim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trim.Designer.cs">
+      <DependentUpon>Trim.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="TextoIncluir.resx">
       <DependentUpon>TextoIncluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trim.resx">
+      <DependentUpon>Trim.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
